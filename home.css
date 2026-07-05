@@ -1,0 +1,132 @@
+@font-face {
+    font-family: inter-medium;
+    src: url(fonts/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav{
+    background-color: #1f1f1f;
+    border: 1px solid #4b4b4b;
+    border-radius: 18px;
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: inter-medium;
+
+}
+
+button{
+    font-family: inter-medium;
+    font-size: 12px;
+    font-weight: 600;
+    
+    background-color: #7b7575;
+    color: #ffffff;
+
+    border: 1px solid #9c9c9c;
+    border-radius: 15px;
+    padding: 17px 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#sk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    
+}
+
+#sk-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#sk-content h1{
+    font-family: poppins-medium;
+    color: white;
+    font-size: 78px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+    padding-left: 70px;
+}
+
+#sk-content h3{
+    font-family: inter-medium;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    padding-left: 70px;
+
+}
+
+#sk-content p{
+    font-family: inter-medium;
+    font-size: 26px;
+    color: white;
+    margin-bottom: 60px;
+    width: 620px;
+    padding-left: 70px;
+
+
+}
+
+#icons{
+
+    margin-left: 70px;
+    margin-top: 20px;
+
+}
+
+#icons img{
+    margin-right: 20px;
+}
+
+#sk-img{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-right: 13%;
+}
+
+#download{
+    font-family: inter-medium;
+    font-size: 12px;
+    font-weight: 600;
+    
+    background-color: #7b7575;
+    color: #ffffff;
+
+    border: 1px solid #9c9c9c;
+    border-radius: 15px;
+    margin-left: 70px;
+
+}
