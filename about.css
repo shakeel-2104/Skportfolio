@@ -1,0 +1,91 @@
+@font-face {
+    font-family: inter-medium;
+    src: url(fonts/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+.about{
+    
+    padding:70px;
+    text-align:center;
+}
+
+.about h2{
+    
+    
+    color: white;
+    font-family: poppins-medium;
+    font-size: 40px;
+    text-align: center;
+
+    margin-top: 60px;
+}
+
+.about p{
+    
+    
+    
+    color: white;
+    font-family: inter-medium;
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.about h3{
+    
+    color: white;
+    font-family: poppins-medium;
+    font-size: 30px;
+    text-align: center;
+
+    margin-top: 60px;
+}
+
+#cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card{
+    display: flex;
+    gap: 10px;
+    background: #2b2b2b;
+    border: 1px solid #4a4a4a;
+    border-radius: 18px;
+    height: 50px;
+    width: 500px;
+    padding: 10px 25px;
+    align-items: center;
+}
+
+.card span{
+    color: white;
+    font-family: inter-medium;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.number{
+    height: 25px;
+    width: 39px;
+    color: black;
+    font-family: inter-medium;
+
+    border: 1px solid white;
+    background: white;
+    border-radius: 7px;
+    
+}
+
+
+
+
