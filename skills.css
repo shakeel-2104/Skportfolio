@@ -1,3 +1,175 @@
-.skills{
-    color: white;
+/* ---------- SKILLS TITLE ---------- */
+
+#skill{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+#skill h2{
+    color:#fff;
+    font-size:55px;
+    font-family:poppins-medium;
+    margin-bottom:15px;
+}
+
+#skill p{
+    color:#fff;
+    font-family:inter-medium;
+    font-size:20px;
+}
+
+/* ---------- SKILLS GRID ---------- */
+
+#skills{
+    width:100%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    padding:20px;
+}
+
+/* ---------- CARD ---------- */
+
+.skill-card{
+
+    background:#1d1d1d;
+
+    border:1px solid #555;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    transition:.3s;
+}
+
+.skill-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.skill-card h2{
+
+    color:white;
+
+    font-family:poppins-medium;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.tools{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.tools span{
+
+    color:white;
+
+    border:1px solid #666;
+
+    border-radius:15px;
+
+    padding:12px 18px;
+
+    font-family:inter-medium;
+
+    font-size:17px;
+
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width:1024px){
+
+#skill h2{
+
+    font-size:45px;
+
+}
+
+#skill p{
+
+    font-size:18px;
+
+}
+
+#skills{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.skill-card h2{
+
+    font-size:28px;
+
+}
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px){
+
+#skill{
+
+    padding:50px 20px 30px;
+
+}
+
+#skill h2{
+
+    font-size:36px;
+
+}
+
+#skill p{
+
+    font-size:16px;
+
+}
+
+#skills{
+
+    grid-template-columns:1fr;
+
+}
+
+.skill-card{
+
+    padding:25px;
+
+}
+
+.skill-card h2{
+
+    font-size:25px;
+
+}
+
+.tools span{
+
+    font-size:15px;
+
+    padding:10px 15px;
+
+}
+
 }

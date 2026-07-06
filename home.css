@@ -8,125 +8,198 @@
     src: url(fonts/Poppins-Medium.ttf);
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 70px;
-}
+/* ---------------- HEADER ---------------- */
 
-ul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 70px;
+    flex-wrap:wrap;
+    gap:20px;
 }
 
 nav{
-    background-color: #1f1f1f;
-    border: 1px solid #4b4b4b;
-    border-radius: 18px;
-    padding: 15px 20px;
+    background:#1f1f1f;
+    border:1px solid #4b4b4b;
+    border-radius:18px;
+    padding:15px 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-family: inter-medium;
+ul{
+    display:flex;
+    gap:30px;
+}
 
+nav ul li a{
+    color:white;
+    font-family:inter-medium;
 }
 
 button{
-    font-family: inter-medium;
-    font-size: 12px;
-    font-weight: 600;
-    
-    background-color: #7b7575;
-    color: #ffffff;
-
-    border: 1px solid #9c9c9c;
-    border-radius: 15px;
-    padding: 17px 20px;
+    font-family:inter-medium;
+    font-size:12px;
+    font-weight:600;
+    background:#7b7575;
+    color:white;
+    border:1px solid #9c9c9c;
+    border-radius:15px;
+    padding:17px 20px;
 
 }
 
-a{
-    text-decoration: none;
+.letstalk a{
     color: white;
+    text-decoration: none;
 }
+
+/* ---------------- HERO SECTION ---------------- */
 
 #sk{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
-    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 70px;
+    gap:50px;
 }
 
 #sk-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#sk-content h1{
-    font-family: poppins-medium;
-    color: white;
-    font-size: 78px;
-    font-weight: 700;
-
-    margin-bottom: 35px;
-    padding-left: 70px;
+    flex:1;
 }
 
 #sk-content h3{
-    font-family: inter-medium;
-    color: white;
-    font-size: 35px;
-    font-weight: 500;
-    padding-left: 70px;
+    color:white;
+    font-family:inter-medium;
+    font-size:35px;
+    margin-bottom:15px;
+}
 
+#sk-content h1{
+    color:white;
+    font-family:poppins-medium;
+    font-size:78px;
+    line-height:1.1;
+    margin-bottom:35px;
 }
 
 #sk-content p{
-    font-family: inter-medium;
-    font-size: 26px;
-    color: white;
-    margin-bottom: 60px;
-    width: 620px;
-    padding-left: 70px;
-
-
-}
-
-#icons{
-
-    margin-left: 70px;
-    margin-top: 20px;
-
-}
-
-#icons img{
-    margin-right: 20px;
-}
-
-#sk-img{
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    margin-right: 13%;
+    color:white;
+    font-family:inter-medium;
+    font-size:24px;
+    max-width:620px;
+    margin-bottom:40px;
 }
 
 #download{
-    font-family: inter-medium;
-    font-size: 12px;
-    font-weight: 600;
-    
-    background-color: #7b7575;
-    color: #ffffff;
+    margin-bottom:25px;
+}
 
-    border: 1px solid #9c9c9c;
-    border-radius: 15px;
-    margin-left: 70px;
+#icons{
+    display:flex;
+    gap:20px;
+}
+
+#icons img{
+    width:50px;
+}
+
+#sk-img{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+#sk-img img{
+    width:100%;
+    max-width:400px;
+}
+
+/* ---------------- TABLET ---------------- */
+
+@media (max-width:1024px){
+
+header{
+    padding:20px 40px;
+}
+
+#sk{
+    padding:40px;
+    gap:40px;
+}
+
+#sk-content h1{
+    font-size:58px;
+}
+
+#sk-content h3{
+    font-size:28px;
+}
+
+#sk-content p{
+    font-size:20px;
+}
+
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav{
+    width:100%;
+}
+
+ul{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.letstalk{
+    width:100%;
+    text-align:center;
+}
+
+#sk{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:30px 20px;
+}
+
+#sk-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#sk-content h1{
+    font-size:42px;
+}
+
+#sk-content h3{
+    font-size:24px;
+}
+
+#sk-content p{
+    font-size:18px;
+    max-width:100%;
+}
+
+#download{
+    margin-bottom:20px;
+}
+
+#icons{
+    justify-content:center;
+}
+
+#sk-img img{
+    max-width:280px;
+}
 
 }

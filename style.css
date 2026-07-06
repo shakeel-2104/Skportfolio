@@ -1,9 +1,39 @@
+/* Removes default spacing from all elements */
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Enables smooth scrolling when clicking anchor links */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Main page background */
 body{
     background-color: black;
+    overflow-x: hidden;   /* Prevents horizontal scrolling */
+}
+
+/* Makes images responsive */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Makes buttons show a pointer cursor */
+button{
+    cursor: pointer;
+}
+
+/* Removes underline from all links */
+a{
+    text-decoration: none;
+}
+
+/* Removes default list bullets */
+ul{
+    list-style: none;
 }

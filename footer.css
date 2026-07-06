@@ -1,0 +1,88 @@
+/* ---------- FOOTER ---------- */
+
+#footer{
+    margin-top:80px;
+    padding:50px 20px;
+    text-align:center;
+}
+
+#footer h2{
+    color:#d9d9d9;
+    font-size:60px;
+    font-family:poppins-medium;
+    margin-bottom:25px;
+}
+
+#footer p{
+    color:white;
+    font-size:22px;
+    font-family:inter-medium;
+    line-height:1.8;
+    max-width:800px;
+    margin:30px auto;
+}
+
+#footer hr{
+    border:none;
+    border-top:1px solid #444;
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+.copyright{
+    font-size:18px;
+    color:#aaa;
+    margin-top:25px;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width:1024px){
+
+#footer{
+    margin-top:70px;
+    padding:40px 20px;
+}
+
+#footer h2{
+    font-size:48px;
+}
+
+#footer p{
+    font-size:20px;
+}
+
+.copyright{
+    font-size:16px;
+}
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px){
+
+#footer{
+    margin-top:50px;
+    padding:35px 20px;
+}
+
+#footer h2{
+    font-size:34px;
+}
+
+#footer p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+#footer hr{
+    width:100%;
+}
+
+.copyright{
+    font-size:14px;
+}
+
+}
