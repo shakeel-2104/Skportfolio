@@ -8,59 +8,65 @@
     src: url(fonts/Poppins-Medium.ttf);
 }
 
-/* ---------------- HEADER ---------------- */
+/* ================= HEADER ================= */
 
 header{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:25px 70px;
-    flex-wrap:wrap;
-    gap:20px;
+    position:relative;
 }
 
+#logo{
+    display:flex;
+    align-items:center;
+}
+
+/* Hamburger Hidden on Desktop */
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:35px;
+    cursor:pointer;
+}
+
+/* Navbar */
+
 nav{
+    margin-left:auto;
     background:#1f1f1f;
     border:1px solid #4b4b4b;
     border-radius:18px;
-    padding:15px 20px;
+    padding:15px 25px;
 }
 
-ul{
+nav ul{
     display:flex;
     gap:30px;
+    list-style:none;
 }
 
 nav ul li a{
     color:white;
+    text-decoration:none;
     font-family:inter-medium;
+    transition:.3s;
 }
 
-button{
-    font-family:inter-medium;
-    font-size:12px;
-    font-weight:600;
-    background:#7b7575;
-    color:white;
-    border:1px solid #9c9c9c;
-    border-radius:15px;
-    padding:17px 20px;
-
+nav ul li a:hover{
+    color:#bdbdbd;
 }
 
-.letstalk a{
-    color: white;
-    text-decoration: none;
-}
-
-/* ---------------- HERO SECTION ---------------- */
+/* ================= HERO SECTION ================= */
 
 #sk{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:60px 70px;
-    gap:50px;
+    padding:70px;
+    gap:60px;
 }
 
 #sk-content{
@@ -111,20 +117,77 @@ button{
 
 #sk-img img{
     width:100%;
-    max-width:400px;
+    max-width:420px;
 }
 
-/* ---------------- TABLET ---------------- */
+/* ================= LET'S TALK BUTTON ================= */
+
+.hero-talk{
+    display:flex;
+    justify-content:center;
+    margin:20px 0 80px;
+}
+
+.hero-btn{
+    background:#7b7575;
+    color:white;
+    border:1px solid #9c9c9c;
+    border-radius:18px;
+    padding:18px 60px;
+    font-size:18px;
+    font-family:inter-medium;
+}
+
+.hero-btn:hover{
+    background:white;
+    color:black;
+}
+
+.hero-talk a{
+    text-decoration:none;
+}
+
+/* ================= TABLET ================= */
 
 @media (max-width:1024px){
 
 header{
     padding:20px 40px;
+    flex-wrap:wrap;
+}
+
+.menu-toggle{
+    display:block;
+    margin-left:auto;
+}
+
+nav{
+    display:none;
+    width:100%;
+    margin:20px 0 0;
+    padding:20px;
+}
+
+nav.show{
+    display:block;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
 }
 
 #sk{
+    flex-direction:column-reverse;
+    text-align:center;
     padding:40px;
-    gap:40px;
+}
+
+#sk-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 #sk-content h1{
@@ -137,32 +200,52 @@ header{
 
 #sk-content p{
     font-size:20px;
+    max-width:100%;
+}
+
+#icons{
+    justify-content:center;
+}
+
+#sk-img img{
+    max-width:340px;
+}
+
+.hero-btn{
+    width:260px;
 }
 
 }
 
-/* ---------------- MOBILE ---------------- */
+/* ================= MOBILE ================= */
 
 @media (max-width:768px){
 
 header{
-    flex-direction:column;
     padding:20px;
 }
 
+.menu-toggle{
+    display:block;
+    margin-left:auto;
+    font-size:32px;
+}
+
 nav{
+    display:none;
     width:100%;
+    margin-top:15px;
+    padding:20px;
 }
 
-ul{
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
+nav.show{
+    display:block;
 }
 
-.letstalk{
-    width:100%;
-    text-align:center;
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
 }
 
 #sk{
@@ -177,12 +260,12 @@ ul{
     align-items:center;
 }
 
-#sk-content h1{
-    font-size:42px;
-}
-
 #sk-content h3{
     font-size:24px;
+}
+
+#sk-content h1{
+    font-size:42px;
 }
 
 #sk-content p{
@@ -200,6 +283,12 @@ ul{
 
 #sk-img img{
     max-width:280px;
+}
+
+.hero-btn{
+    width:220px;
+    padding:16px;
+    font-size:16px;
 }
 
 }
